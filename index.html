@@ -158,6 +158,77 @@
     .sources-list{grid-template-columns:1fr;}
     .subject-table{font-size:11px;}
   }
+
+  /* ── PROGRESSION LADDERS (Tab 6) ── */
+  .prog-columns { display:grid; grid-template-columns:1fr 1fr; gap:28px; margin:32px 0; }
+  .prog-col { background:var(--white); border-radius:10px; overflow:hidden; box-shadow:0 2px 14px rgba(0,0,0,.07); }
+  .prog-col-header { padding:22px 24px; background:var(--navy); display:flex; align-items:flex-start; gap:14px; }
+  .prog-col-icon { font-size:28px; line-height:1; flex-shrink:0; padding-top:2px; }
+  .prog-col-header h3 { font-family:'Lato',sans-serif; font-weight:700; font-size:16px; color:var(--white); margin-bottom:4px; }
+  .prog-col-sub { font-family:'DM Mono',monospace; font-size:9px; letter-spacing:.08em; color:rgba(255,255,255,.4); line-height:1.5; }
+
+  .prog-level { border-bottom:1px solid var(--grey-light); }
+  .prog-level:last-child { border-bottom:none; }
+  .prog-level-badge { padding:8px 20px 6px; font-family:'DM Mono',monospace; font-size:9px; letter-spacing:.2em; text-transform:uppercase; font-weight:500; }
+  .prog-level.foundation .prog-level-badge { background:#f0ede6; color:#7a7a8a; }
+  .prog-level.basic .prog-level-badge { background:rgba(27,150,144,.08); color:var(--teal); }
+  .prog-level.intermediate .prog-level-badge { background:rgba(35,54,107,.07); color:var(--navy-mid); }
+  .prog-level.advanced .prog-level-badge { background:rgba(184,146,42,.1); color:var(--gold); }
+  .prog-level.highly-advanced .prog-level-badge { background:rgba(26,39,68,.07); color:var(--navy); }
+
+  .prog-items { padding:4px 0 8px; }
+  .prog-item { padding:10px 20px; border-top:1px solid var(--grey-light); }
+  .prog-item:first-child { border-top:none; }
+  .prog-item-title { font-family:'Lato',sans-serif; font-weight:700; font-size:13px; color:var(--navy); margin-bottom:3px; }
+  .prog-item-desc { font-family:'Lato',sans-serif; font-size:12px; color:var(--text-mid); line-height:1.5; }
+
+  /* ── TLA TEACHER SKILLS (Tab 7) ── */
+  .framework-strip { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin:28px 0 36px; }
+  .fw-card { background:var(--white); border-radius:8px; padding:20px; box-shadow:0 2px 8px rgba(0,0,0,.05); border-top:4px solid var(--teal); }
+  .fw-card:nth-child(2) { border-top-color:var(--gold); }
+  .fw-card:nth-child(3) { border-top-color:var(--navy-mid); }
+  .fw-label { font-family:'DM Mono',monospace; font-size:9px; letter-spacing:.18em; text-transform:uppercase; color:var(--teal); margin-bottom:4px; }
+  .fw-card:nth-child(2) .fw-label { color:var(--gold); }
+  .fw-card:nth-child(3) .fw-label { color:var(--navy-mid); }
+  .fw-name { font-family:'Playfair Display',serif; font-size:18px; font-weight:700; color:var(--navy); margin-bottom:8px; }
+  .fw-desc { font-size:12px; color:var(--text-mid); line-height:1.5; margin-bottom:10px; }
+  .fw-link { font-family:'DM Mono',monospace; font-size:10px; color:var(--teal); text-decoration:none; border-bottom:1px solid rgba(27,150,144,.3); }
+
+  .tla-section-title { font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.2em; text-transform:uppercase; color:var(--text-light); margin:0 0 20px; padding-top:8px; }
+
+  .tla-stage { background:var(--white); border-radius:10px; overflow:hidden; box-shadow:0 2px 10px rgba(0,0,0,.06); margin-bottom:24px; }
+  .tla-stage-header { display:grid; grid-template-columns:80px 1fr auto; gap:16px; align-items:center; padding:20px 24px; }
+  .tla-stage.exploring .tla-stage-header { background:linear-gradient(135deg,#e8f5f4,#f4f9f9); border-left:5px solid var(--teal); }
+  .tla-stage.adopting .tla-stage-header { background:linear-gradient(135deg,#f5f1e8,#faf8f3); border-left:5px solid var(--gold); }
+  .tla-stage.adopting-b .tla-stage-header { background:linear-gradient(135deg,#edf0f8,#f4f6fb); border-left:5px solid var(--navy-mid); }
+  .tla-stage.leading .tla-stage-header { background:linear-gradient(135deg,#e8ebf4,#eef0f8); border-left:5px solid var(--navy); }
+
+  .tla-stage-num { font-family:'Playfair Display',serif; font-size:32px; font-weight:700; color:var(--navy); opacity:.25; text-align:center; }
+  .tla-stage-info h3 { font-family:'Lato',sans-serif; font-weight:700; font-size:16px; color:var(--navy); margin-bottom:4px; }
+  .tla-digcomp { font-family:'DM Mono',monospace; font-size:10px; letter-spacing:.08em; color:var(--text-light); }
+  .tla-stage-who { font-family:'Lato',sans-serif; font-size:11px; color:var(--text-light); line-height:1.5; max-width:200px; text-align:right; font-style:italic; }
+
+  .tla-skills-grid { padding:8px 0; }
+  .tla-skill { display:grid; grid-template-columns:48px 1fr; gap:0; border-top:1px solid var(--grey-light); }
+  .tla-skill:first-child { border-top:none; }
+  .tla-skill-number { font-family:'DM Mono',monospace; font-size:11px; color:var(--grey-mid); padding:14px 0 14px 20px; }
+  .tla-skill-body { padding:14px 24px 14px 0; }
+  .tla-skill-name { font-family:'Lato',sans-serif; font-weight:700; font-size:13px; color:var(--navy); margin-bottom:2px; }
+  .tla-skill-area { font-family:'DM Mono',monospace; font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:var(--teal); margin-bottom:5px; }
+  .tla-stage.adopting .tla-skill-area { color:var(--gold); }
+  .tla-stage.adopting-b .tla-skill-area { color:var(--navy-mid); }
+  .tla-stage.leading .tla-skill-area { color:var(--navy); }
+  .tla-skill-desc { font-family:'Lato',sans-serif; font-size:12px; color:var(--text-mid); line-height:1.55; margin-bottom:6px; }
+  .tla-skill-links { display:flex; flex-wrap:wrap; gap:8px; }
+  .tla-skill-links a { font-family:'DM Mono',monospace; font-size:9px; letter-spacing:.08em; color:var(--teal); text-decoration:none; border-bottom:1px solid rgba(27,150,144,.3); }
+  .tla-skill-links a:hover { color:var(--teal-light); }
+
+  @media(max-width:960px){
+    .prog-columns { grid-template-columns:1fr; }
+    .framework-strip { grid-template-columns:1fr; }
+    .tla-stage-header { grid-template-columns:1fr; }
+    .tla-stage-who { max-width:none; text-align:left; }
+  }
 </style>
 </head>
 <body>
@@ -189,8 +260,8 @@
       <div class="top10-card"><div class="rank">10</div><div class="skill-name">Digital Wellbeing &amp; Inclusion Awareness</div><div class="skill-desc">Screen balance, accessibility, inclusive practice</div><span class="tag">Inclusion</span></div>
     </div>
     <div class="cover-cta">
-      <button class="btn-explore" onclick="openTabs()">Explore All 5 Sections →</button>
-      <span class="cover-nav-hint">General Skills · All 30 Subjects · Industry-Specific · Framing · SEND &amp; Inclusion</span>
+      <button class="btn-explore" onclick="openTabs()">Explore All 7 Sections →</button>
+      <span class="cover-nav-hint">General Skills · All 30 Subjects · Industry-Specific · Framing · SEND · Skills Progression · Teacher TLA Skills</span>
     </div>
   </div>
   <div class="source-ribbon">
@@ -218,6 +289,8 @@
     <button class="tab-btn" onclick="showTab('tab3',this)">3 · Industry-Specific Skills</button>
     <button class="tab-btn" onclick="showTab('tab4',this)">4 · Framing for Industry</button>
     <button class="tab-btn" onclick="showTab('tab5',this)">5 · SEND &amp; Inclusion</button>
+    <button class="tab-btn" onclick="showTab('tab6',this)">6 · Skills Progression</button>
+    <button class="tab-btn" onclick="showTab('tab7',this)">7 · Teacher Digital Skills</button>
   </div>
 
   <!-- ══ TAB 1: GENERAL DIGITAL SKILLS ══ -->
@@ -885,9 +958,657 @@
         <div class="source-item"><a href="https://explore-education-statistics.service.gov.uk/find-statistics/further-education-and-skills/2024-25" target="_blank">DfE FE &amp; Skills Statistics 2024/25</a><span>ESOL and essential skills participation data</span></div>
         <div class="source-item"><a href="https://www.texthelp.com/en-gb/products/read-write/" target="_blank">TextHelp — Read&amp;Write for Education</a><span>Primary assistive technology tool across all SEND areas</span></div>
         <div class="source-item"><a href="https://support.microsoft.com/en-us/topic/use-the-accessibility-checker-on-your-windows-desktop-to-find-accessibility-issues" target="_blank">Microsoft — Accessibility Checker Guide</a><span>Built-in tool for accessible resource creation</span></div>
+        <div class="source-item"><a href="https://explore-education-statistics.service.gov.uk/find-statistics/further-education-and-skills/2024-25" target="_blank">DfE FE &amp; Skills Statistics 2024/25</a><span>ESOL and essential skills participation data</span></div>
+        <div class="source-item"><a href="https://www.texthelp.com/en-gb/products/read-write/" target="_blank">TextHelp — Read&amp;Write for Education</a><span>Primary assistive technology tool across all SEND areas</span></div>
+        <div class="source-item"><a href="https://support.microsoft.com/en-us/topic/use-the-accessibility-checker-on-your-windows-desktop-to-find-accessibility-issues" target="_blank">Microsoft — Accessibility Checker Guide</a><span>Built-in tool for accessible resource creation</span></div>
       </div>
     </div>
   </div>
+
+  <!-- ══ TAB 6: SKILLS PROGRESSION (Basic → Advanced) ══ -->
+  <div class="tab-content" id="tab6">
+    <div class="section-eyebrow">Tab 06 of 07</div>
+    <h2 class="section-title">Digital Skills Progression<br><em>Basic to Advanced</em></h2>
+    <p class="section-intro">Two parallel ladders showing progression from absolute beginner to highly advanced — one for <strong>General Digital Skills</strong> (applicable to all citizens and learners) and one for <strong>IT &amp; Computing Skills</strong> specific to FE &amp; HE contexts. Both are structured using the <a href="https://joint-research-centre.ec.europa.eu/projects-and-activities/education-and-training/digital-transformation-education/digital-competence-framework-digcomp/digcomp-30_en" target="_blank">DigComp 3.0 proficiency levels</a> (European Commission, November 2025) — Foundation, Basic, Intermediate, Advanced, Highly Advanced. Each skill includes a short descriptor explaining what competence at that level looks and feels like in practice.</p>
+    <div class="info-box"><strong>How to use these ladders:</strong> Use them to position learners and staff on a shared progression scale. They work as self-assessment prompts, CPD planning tools, and as evidence for digital hours planning in Business Plans. The DigComp 3.0 levels (updated November 2025) are the current European and UK reference standard.</div>
+
+    <div class="prog-columns">
+
+      <!-- COLUMN 1: GENERAL DIGITAL SKILLS -->
+      <div class="prog-col">
+        <div class="prog-col-header">
+          <div class="prog-col-icon">🌐</div>
+          <div>
+            <h3>General Digital Skills</h3>
+            <p class="prog-col-sub">For all citizens, learners &amp; employees · Based on <a href="https://www.gov.uk/government/publications/essential-digital-skills-framework" target="_blank" style="color:rgba(255,255,255,.6);">DfE EDS Framework</a> &amp; <a href="https://joint-research-centre.ec.europa.eu/projects-and-activities/education-and-training/digital-transformation-education/digital-competence-framework-digcomp/digcomp-30_en" target="_blank" style="color:rgba(255,255,255,.6);">DigComp 3.0 (2025)</a></p>
+          </div>
+        </div>
+
+        <div class="prog-level foundation">
+          <div class="prog-level-badge">Foundation</div>
+          <div class="prog-items">
+            <div class="prog-item">
+              <div class="prog-item-title">Switching on &amp; basic navigation</div>
+              <div class="prog-item-desc">Can switch on a device, use a mouse or touchscreen, open an app or browser. Needs guidance for most tasks and unfamiliar with menus.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Recognising common icons &amp; interfaces</div>
+              <div class="prog-item-desc">Identifies common icons (Wi-Fi, battery, settings). Can locate and tap familiar apps used regularly (e.g. WhatsApp, YouTube) but not transfer skills to new interfaces.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Basic internet browsing</div>
+              <div class="prog-item-desc">Can open a browser and type a URL or search term. May not distinguish between a search result and an advertisement. Needs prompting to navigate within sites.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Sending and receiving basic messages</div>
+              <div class="prog-item-desc">Can send a text message or WhatsApp. Struggles with email attachments, formatting, or creating a new contact from scratch.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prog-level basic">
+          <div class="prog-level-badge">Basic</div>
+          <div class="prog-items">
+            <div class="prog-item">
+              <div class="prog-item-title">Email — composing, replying, attaching</div>
+              <div class="prog-item-desc">Can write, send, reply and forward emails. Can attach a document. Uses a subject line. Knows not to open suspicious attachments. Understands CC and BCC at a basic level.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Searching effectively online</div>
+              <div class="prog-item-desc">Uses search engines with specific terms, not just single words. Can open multiple tabs, bookmark pages, and navigate back. Beginning to question source reliability.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Creating simple documents</div>
+              <div class="prog-item-desc">Can open Word or Google Docs, type, edit, and save. Applies basic formatting (bold, font size, bullet lists). Saves to a folder and can retrieve the file later.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Basic online transactions</div>
+              <div class="prog-item-desc">Can shop online, fill in a digital form, and create an account. Understands passwords and uses one for accounts (even if not unique per account). Can use online banking for viewing balance.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Accessing public digital services</div>
+              <div class="prog-item-desc">Can navigate gov.uk, book a GP appointment online, or use the NHS App. Understands that public services are increasingly online-first.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prog-level intermediate">
+          <div class="prog-level-badge">Intermediate</div>
+          <div class="prog-items">
+            <div class="prog-item">
+              <div class="prog-item-title">Productive use of office applications</div>
+              <div class="prog-item-desc">Uses Word, Excel (basic formulae, sorting, simple charts), and PowerPoint confidently. Creates structured documents with headings. Manages files across folders and cloud storage independently.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Video calling and digital collaboration</div>
+              <div class="prog-item-desc">Joins and hosts video calls (Teams, Zoom). Uses shared documents simultaneously with others. Understands cloud storage (OneDrive, Google Drive). Can collaborate asynchronously on a shared file.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Online safety — active practice</div>
+              <div class="prog-item-desc">Uses unique strong passwords and a password manager. Recognises phishing emails. Enables two-factor authentication. Understands privacy settings on social media and reviews them actively.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Evaluating digital information critically</div>
+              <div class="prog-item-desc">Checks publication dates, author credentials, and cross-references sources. Recognises misinformation patterns. Understands the difference between fact, opinion, and sponsored content.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Creating and sharing digital content</div>
+              <div class="prog-item-desc">Produces presentations, short videos, infographics, or social posts for a defined purpose. Uses tools like Canva or basic video editors. Understands copyright and Creative Commons basics.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Basic AI tool use</div>
+              <div class="prog-item-desc">Can use AI assistants (ChatGPT, Copilot) to draft text, summarise documents, or answer questions. Knows to verify AI outputs and not share personal data with AI tools.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prog-level advanced">
+          <div class="prog-level-badge">Advanced</div>
+          <div class="prog-items">
+            <div class="prog-item">
+              <div class="prog-item-title">Advanced data management &amp; analysis</div>
+              <div class="prog-item-desc">Uses Excel pivot tables, VLOOKUP, and IF statements. Can build basic Power BI dashboards. Manages datasets, cleans data, and produces evidence-based reports. Able to guide others through this.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Digital project management</div>
+              <div class="prog-item-desc">Uses project management tools (Planner, Trello, Asana). Manages workflows, assigns tasks digitally, tracks progress, and reports on outcomes. Understands agile / sprint-based approaches.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">AI as a working tool</div>
+              <div class="prog-item-desc">Uses AI strategically to accelerate work — writing, research, summarising, coding. Evaluates AI outputs critically, writes effective prompts, and knows AI's ethical and accuracy limitations.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Digital communication strategy</div>
+              <div class="prog-item-desc">Manages professional digital presence (LinkedIn, email reputation). Uses digital channels strategically for audience-appropriate communication. Creates and maintains digital content for external audiences.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Cybersecurity — personal and organisational</div>
+              <div class="prog-item-desc">Understands GDPR obligations, recognises social engineering attacks, manages security settings across devices and platforms. Can brief others on safe practice and respond to a basic security incident.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prog-level highly-advanced">
+          <div class="prog-level-badge">Highly Advanced</div>
+          <div class="prog-items">
+            <div class="prog-item">
+              <div class="prog-item-title">Strategic digital leadership</div>
+              <div class="prog-item-desc">Shapes digital culture, policy or strategy at organisational or sector level. Advocates for digital inclusion, accessibility, and ethical technology use. Drives change beyond their own practice.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Building and automating digital workflows</div>
+              <div class="prog-item-desc">Uses low-code / no-code tools (Power Automate, Zapier, Airtable) to automate routine tasks. Creates systems others rely on. May develop scripts or use APIs without being a software developer.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Advanced AI and digital innovation</div>
+              <div class="prog-item-desc">Identifies novel applications of AI and digital tools in their field. Builds custom GPTs or AI workflows. Evaluates emerging technologies for organisational use. Writes or reviews AI policy.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Digital rights, ethics and advocacy</div>
+              <div class="prog-item-desc">Understands the societal implications of digital technology — algorithmic bias, data sovereignty, digital rights. Advocates for ethical and inclusive digital practice at system level.</div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end col 1 -->
+
+      <!-- COLUMN 2: IT SKILLS FOR FE & HE -->
+      <div class="prog-col">
+        <div class="prog-col-header">
+          <div class="prog-col-icon">💻</div>
+          <div>
+            <h3>IT Skills for FE &amp; HE College</h3>
+            <p class="prog-col-sub">Specific to the further &amp; higher education context · Based on <a href="https://www.jisc.ac.uk/guides/digital-capabilities" target="_blank" style="color:rgba(255,255,255,.6);">Jisc Digital Capabilities</a> &amp; <a href="https://www.et-foundation.co.uk/professional-development/edtech-support/digital-skills-competency-framework/" target="_blank" style="color:rgba(255,255,255,.6);">ETF DTPF</a></p>
+          </div>
+        </div>
+
+        <div class="prog-level foundation">
+          <div class="prog-level-badge">Foundation</div>
+          <div class="prog-items">
+            <div class="prog-item">
+              <div class="prog-item-title">Logging into college systems</div>
+              <div class="prog-item-desc">Can log in to college email, Teams, and the VLE (e.g. Moodle, Canvas) using college credentials. Needs prompting to reset passwords. Does not yet use systems independently.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Accessing course materials online</div>
+              <div class="prog-item-desc">Can find and open resources posted by staff on the VLE or Teams channel. Cannot yet navigate the system autonomously or find materials posted in a different location.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Basic printing and scanning</div>
+              <div class="prog-item-desc">Can print a document from a college PC. Can use a flatbed scanner with guidance. Struggles to connect to network printers or save scanned documents to the correct location.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prog-level basic">
+          <div class="prog-level-badge">Basic</div>
+          <div class="prog-items">
+            <div class="prog-item">
+              <div class="prog-item-title">VLE navigation — learner level</div>
+              <div class="prog-item-desc">Can access assignment briefs, submission portals, grades, and feedback on the college VLE. Submits work digitally. Receives and reads tutor feedback online. Uses the VLE calendar for deadlines.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Microsoft 365 / Google Workspace basics</div>
+              <div class="prog-item-desc">Uses college Microsoft 365 or Google Workspace — email, Word/Docs, PowerPoint/Slides. Can save to OneDrive/Drive and share a document with a link. Creates folders for course organisation.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Submitting and referencing work digitally</div>
+              <div class="prog-item-desc">Submits assignments via Turnitin, Teams assignment, or VLE submission portal. Uses a referencing tool (e.g. Cite Them Right) to format digital sources correctly.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Using Microsoft Teams for study</div>
+              <div class="prog-item-desc">Joins class Teams channels, participates in team chats, accesses shared files, and attends and records sessions. Can post to a channel and reply to threads.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prog-level intermediate">
+          <div class="prog-level-badge">Intermediate</div>
+          <div class="prog-items">
+            <div class="prog-item">
+              <div class="prog-item-title">Digital research &amp; academic databases</div>
+              <div class="prog-item-desc">Uses college-licensed databases (EBSCO, JSTOR, ProQuest) to locate peer-reviewed sources. Applies Boolean search operators. Exports references to Zotero or Mendeley. Evaluates source authority and currency.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Creating professional digital presentations</div>
+              <div class="prog-item-desc">Produces visually clear presentations using PowerPoint or equivalent. Applies accessibility principles (readable fonts, sufficient contrast, alt-text). Uses built-in accessibility checker. Presents slides digitally to an audience.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Data handling for academic work</div>
+              <div class="prog-item-desc">Uses Excel or SPSS for basic data analysis — sorting, filtering, producing charts, calculating means/percentages. Can interpret datasets and present findings clearly in a report.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">ePortfolio and digital evidence management</div>
+              <div class="prog-item-desc">Builds and maintains a digital portfolio (Smart Assessor, Mahara, OneNote) as evidence of learning. Uploads, organises, and links evidence appropriately. Responds to and acts on digital feedback.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Collaborative digital project work</div>
+              <div class="prog-item-desc">Co-creates documents, presentations, and shared reports in real time. Manages version history. Uses Microsoft Planner or Trello to coordinate group tasks. Gives and receives feedback digitally.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">AI tools for study — ethical use</div>
+              <div class="prog-item-desc">Uses AI tools (Copilot, ChatGPT, Grammarly) to support writing, summarise reading, or generate ideas — with full understanding of academic integrity expectations and institutional AI policy.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prog-level advanced">
+          <div class="prog-level-badge">Advanced</div>
+          <div class="prog-items">
+            <div class="prog-item">
+              <div class="prog-item-title">Advanced data analysis &amp; visualisation</div>
+              <div class="prog-item-desc">Uses SPSS, R, or Python for statistical analysis. Produces publication-quality charts and infographics. Applies data visualisation principles. Can brief others on findings from complex datasets.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Digital content production</div>
+              <div class="prog-item-desc">Produces multi-media academic or professional content — video essays, podcasts, interactive documents, H5P resources, or VR presentations. Applies copyright and accessibility standards throughout.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Sector-specific digital platforms (advanced)</div>
+              <div class="prog-item-desc">Masters discipline-specific platforms — lab simulation software (STEM), clinical decision tools (Health), CAD systems (Engineering), financial modelling (Business). Can train peers in their use.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Digital research methods</div>
+              <div class="prog-item-desc">Conducts primary digital research — online surveys (Qualtrics, Microsoft Forms), digital interviews, social media analysis. Applies ethical approval processes. Manages digital research data in line with GDPR.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Digital professional identity &amp; networking</div>
+              <div class="prog-item-desc">Maintains an active, professional LinkedIn or equivalent profile. Engages with professional communities online. Builds a digital portfolio evidencing achievement for employability. Understands personal digital brand.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prog-level highly-advanced">
+          <div class="prog-level-badge">Highly Advanced</div>
+          <div class="prog-items">
+            <div class="prog-item">
+              <div class="prog-item-title">Digital scholarship &amp; open education</div>
+              <div class="prog-item-desc">Publishes research digitally (open access repositories, preprints, academic blogs). Creates OERs (Open Educational Resources) for others. Contributes to digital knowledge communities beyond the college.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Computational thinking &amp; automation</div>
+              <div class="prog-item-desc">Applies programming or scripting logic to academic/professional problems — not necessarily as a developer, but as an intelligent user of code tools. Automates repetitive tasks in their field of study.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Digital innovation in their field</div>
+              <div class="prog-item-desc">Identifies where digital tools create new possibilities in their discipline. Proposes, designs, and pilots digital solutions — e.g. an app, a digital workflow, or a tech-enhanced service delivery model.</div>
+            </div>
+            <div class="prog-item">
+              <div class="prog-item-title">Digital ethics leadership</div>
+              <div class="prog-item-desc">Advocates for responsible, inclusive, and ethical digital practice in their field. Contributes to institutional or sector policy on AI, data, or digital access. Mentors others in responsible digital use.</div>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- end col 2 -->
+
+    </div><!-- end prog-columns -->
+
+    <div class="sources-block">
+      <h4>Key Sources &amp; Where to Find Them</h4>
+      <div class="sources-list">
+        <div class="source-item">
+          <a href="https://joint-research-centre.ec.europa.eu/projects-and-activities/education-and-training/digital-transformation-education/digital-competence-framework-digcomp/digcomp-30_en" target="_blank">DigComp 3.0 — EU Digital Competence Framework (2025)</a>
+          <span>European Commission JRC · Published November 2025 · Navigate to: JRC homepage → Projects → Education &amp; Training → Digital Competence Framework → DigComp 3.0</span>
+        </div>
+        <div class="source-item">
+          <a href="https://www.gov.uk/government/publications/essential-digital-skills-framework" target="_blank">DfE Essential Digital Skills Framework — Gov.UK</a>
+          <span>UK Government DfE · Navigate to: gov.uk → search "Essential Digital Skills Framework" → Publications</span>
+        </div>
+        <div class="source-item">
+          <a href="https://www.jisc.ac.uk/guides/digital-capabilities" target="_blank">Jisc — Building Digital Capabilities Framework</a>
+          <span>Jisc · Navigate to: jisc.ac.uk → Guides → Digital Capabilities. Includes 6-element framework for FE &amp; HE learners and staff.</span>
+        </div>
+        <div class="source-item">
+          <a href="https://futuredotnow.uk/new-report-charts-path-to-ai-ready-uk-workforce/" target="_blank">FutureDotNow — AI-Ready UK Workforce Report (Oct 2025)</a>
+          <span>FutureDotNow · Navigate to: futuredotnow.uk → About Us → Reports → AI-Ready Workforce</span>
+        </div>
+        <div class="source-item">
+          <a href="https://digital-skills-jobs.europa.eu/en/latest/news/new-chapter-digital-skills-europe-explore-digcomp-30" target="_blank">EU Digital Skills &amp; Jobs Platform — DigComp 3.0 Overview</a>
+          <span>European Commission · Navigate to: digital-skills-jobs.europa.eu → Latest News → DigComp 3.0</span>
+        </div>
+        <div class="source-item">
+          <a href="https://www.verifyed.io/blog/digital-skills-essential-guide" target="_blank">VerifyEd — Digital Skills Essential Guide 2025</a>
+          <span>VerifyEd · Navigate to: verifyed.io → Blog → Digital Skills Essential Guide. Useful summary of progression pathways with employer data.</span>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tab6 -->
+
+  <!-- ══ TAB 7: TEACHER DIGITAL SKILLS (TLA) ══ -->
+  <div class="tab-content" id="tab7">
+    <div class="section-eyebrow">Tab 07 of 07</div>
+    <h2 class="section-title">Teacher Digital Skills<br><em>TLA-Focused Progression</em></h2>
+    <p class="section-intro">A structured progression framework for FE &amp; HE teaching staff — from first engaging with technology in the classroom to leading digital innovation across the college. Built on three authoritative frameworks: the <a href="https://www.et-foundation.co.uk/professional-development/edtech-support/digital-skills-competency-framework/" target="_blank">ETF Digital Teaching Professional Framework (DTPF)</a> — the definitive FE-specific teacher digital framework — the <a href="https://joint-research-centre.ec.europa.eu/digcompedu_en" target="_blank">DigCompEdu</a> framework for educators (A1–C2 progression levels), and the <a href="https://www.et-foundation.co.uk/professional-standards/" target="_blank">ETF Professional Standards for FE Teachers</a>. Each level includes descriptors directly connected to Teaching, Learning &amp; Assessment (TLA) practice.</p>
+
+    <div class="info-box"><strong>Connecting to Weston College strategy:</strong> This framework maps directly to the Pedagogy, Assessment &amp; Innovation and Capacity Building &amp; QA strategic pillars. It can be used by TLAMs and Digital Pedagogy Coaches in coaching conversations, CPD planning, and as a self-assessment tool alongside the <a href="https://enhance.etfoundation.co.uk/" target="_blank">ETF Enhance Digital Teaching Platform</a>.</div>
+
+    <!-- Framework reference strip -->
+    <div class="framework-strip">
+      <div class="fw-card">
+        <div class="fw-label">Stage 1</div>
+        <div class="fw-name">Exploring</div>
+        <div class="fw-desc">Teacher is beginning to explore digital tools. Assimilates new information. Relies on guidance. DigCompEdu: A1–A2 (Newcomer → Explorer)</div>
+        <a href="https://www.et-foundation.co.uk/professional-development/edtech-support/digital-skills-competency-framework/" target="_blank" class="fw-link">ETF DTPF ↗</a>
+      </div>
+      <div class="fw-card">
+        <div class="fw-label">Stage 2</div>
+        <div class="fw-name">Adopting</div>
+        <div class="fw-desc">Teacher applies digital practices in their classroom and begins expanding them. DigCompEdu: B1–B2 (Integrator → Expert)</div>
+        <a href="https://joint-research-centre.ec.europa.eu/digcompedu_en" target="_blank" class="fw-link">DigCompEdu ↗</a>
+      </div>
+      <div class="fw-card">
+        <div class="fw-label">Stage 3</div>
+        <div class="fw-name">Leading</div>
+        <div class="fw-desc">Teacher passes on knowledge, critiques existing practice, and develops new digital approaches. DigCompEdu: C1–C2 (Leader → Pioneer)</div>
+        <a href="https://joint-research-centre.ec.europa.eu/digcompedu_en" target="_blank" class="fw-link">DigCompEdu ↗</a>
+      </div>
+    </div>
+
+    <!-- PROGRESSION TABLE -->
+    <div class="tla-section-title">Full Progression — Stage 1 to Stage 3</div>
+
+    <!-- STAGE 1: EXPLORING -->
+    <div class="tla-stage exploring">
+      <div class="tla-stage-header">
+        <div class="tla-stage-num">Stage 1</div>
+        <div class="tla-stage-info">
+          <h3>Exploring Digital Teaching</h3>
+          <span class="tla-digcomp">DigCompEdu A1–A2 · ETF DTPF Stage 1</span>
+        </div>
+        <div class="tla-stage-who">Newly appointed staff · Career changers · Staff returning from absence · Low-confidence digital users</div>
+      </div>
+      <div class="tla-skills-grid">
+        <div class="tla-skill">
+          <div class="tla-skill-number">1.1</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Accessing and using the VLE / LMS</div>
+            <div class="tla-skill-area">Professional Engagement</div>
+            <div class="tla-skill-desc">Can log into the college VLE (Moodle, Canvas, or equivalent), view existing course content, and upload a simple resource such as a handout or link. Understands how learners access the same space. Knows who to contact for VLE support.</div>
+            <div class="tla-skill-links"><a href="https://www.et-foundation.co.uk/professional-development/edtech-support/digital-skills-competency-framework/" target="_blank">ETF DTPF ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">1.2</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Using Microsoft Teams for communication</div>
+            <div class="tla-skill-area">Digital Communication</div>
+            <div class="tla-skill-desc">Can join a Teams meeting, post to a channel, share a file, and message a learner or colleague. Comfortable with the basic layout. Does not yet use advanced features like breakout rooms, Forms, or channel tabs.</div>
+            <div class="tla-skill-links"><a href="https://support.microsoft.com/en-us/teams" target="_blank">Microsoft Teams Help ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">1.3</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Creating basic digital presentations</div>
+            <div class="tla-skill-area">Digital Resources</div>
+            <div class="tla-skill-desc">Produces PowerPoint slides with text and images for classroom use. Understands the difference between a slide deck used in class and one shared with learners online. Aware that slides should be legible and not overcrowded, but does not yet apply formal accessibility standards.</div>
+            <div class="tla-skill-links"><a href="https://create.microsoft.com/en-us/learn/articles/tips-for-creating-a-good-powerpoint-presentation" target="_blank">Microsoft — Good Presentations ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">1.4</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Submitting admin data digitally</div>
+            <div class="tla-skill-area">Professional Engagement</div>
+            <div class="tla-skill-desc">Can complete register, funding, and compliance forms on college MIS systems (ProMonitor, e-ILP). Submits data accurately without assistance. Understands GDPR basics — does not share learner data inappropriately.</div>
+            <div class="tla-skill-links"><a href="https://www.gov.uk/guidance/data-protection-in-schools" target="_blank">Gov.UK Data Protection in Education ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">1.5</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Aware of digital tools available in the college</div>
+            <div class="tla-skill-area">Digital Awareness</div>
+            <div class="tla-skill-desc">Has attended an overview of the college's key digital tools (Teams, VLE, Microsoft 365). Knows which tools are available and approved. Has not yet integrated them meaningfully into regular teaching practice.</div>
+            <div class="tla-skill-links"><a href="https://enhance.etfoundation.co.uk/" target="_blank">ETF Enhance Platform ↗</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STAGE 2A: ADOPTING — GETTING STARTED -->
+    <div class="tla-stage adopting">
+      <div class="tla-stage-header">
+        <div class="tla-stage-num">Stage 2A</div>
+        <div class="tla-stage-info">
+          <h3>Adopting — Developing Digital Practice</h3>
+          <span class="tla-digcomp">DigCompEdu B1 (Integrator) · ETF DTPF Stage 2</span>
+        </div>
+        <div class="tla-stage-who">Staff with 1–2 years experience · Staff completing or post-ITE · Those who use basic tools but lack consistency</div>
+      </div>
+      <div class="tla-skills-grid">
+        <div class="tla-skill">
+          <div class="tla-skill-number">2.1</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Structuring an active VLE course space</div>
+            <div class="tla-skill-area">Digital Resources</div>
+            <div class="tla-skill-desc">Has built a well-organised VLE course with clear sections, resources for each topic, and learner-facing instructions. Learners can independently navigate the space. Content is current and updated regularly rather than a one-off upload.</div>
+            <div class="tla-skill-links"><a href="https://www.et-foundation.co.uk/professional-development/edtech-support/digital-skills-competency-framework/" target="_blank">ETF DTPF Stage 2 ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">2.2</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Using Teams for active learner engagement</div>
+            <div class="tla-skill-area">Teaching &amp; Learning</div>
+            <div class="tla-skill-desc">Uses Teams channels for ongoing learner discussion, Q&amp;A, and feedback. Sets Teams assignments with rubrics and due dates. Uses breakout rooms for small-group work. Embeds Microsoft Forms for quick polls or knowledge checks within a session.</div>
+            <div class="tla-skill-links"><a href="https://support.microsoft.com/en-us/topic/use-microsoft-teams-for-remote-learning-9b4a36ca-a10d-4cad-8649-f2bd47a25879" target="_blank">Microsoft Teams for Learning ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">2.3</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Formative digital assessment</div>
+            <div class="tla-skill-area">Assessment</div>
+            <div class="tla-skill-desc">Uses digital tools for formative assessment — Microsoft Forms quizzes, Mentimeter, Kahoot, or Padlet for checking understanding within lessons. Reviews response data to adapt teaching. Gives digital feedback on assignments via Teams or the VLE.</div>
+            <div class="tla-skill-links"><a href="https://www.et-foundation.co.uk/professional-development/edtech-support/digital-skills-competency-framework/" target="_blank">ETF DTPF ↗</a> · <a href="https://www.mentimeter.com/features/education" target="_blank">Mentimeter for Education ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">2.4</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Creating accessible digital resources</div>
+            <div class="tla-skill-area">Accessibility &amp; Inclusion</div>
+            <div class="tla-skill-desc">Applies accessibility principles to all digital materials — readable fonts (minimum 18pt), sufficient colour contrast, alt-text on images, headings in Word documents. Uses Microsoft Office's built-in Accessibility Checker. Understands WCAG 2.2 AA as the standard all college resources should meet.</div>
+            <div class="tla-skill-links"><a href="https://www.w3.org/WAI/WCAG22/quickref/" target="_blank">WCAG 2.2 Reference ↗</a> · <a href="https://support.microsoft.com/en-us/topic/improve-accessibility-with-the-accessibility-checker-a16f6de0-2f39-4a2b-8bd8-5ad801426c7f" target="_blank">Office Accessibility Checker ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">2.5</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Using data from college systems to inform teaching</div>
+            <div class="tla-skill-area">Data-Informed Practice</div>
+            <div class="tla-skill-desc">Reviews attendance, attainment, and target data from ProMonitor or equivalent MIS. Identifies at-risk learners digitally and records intervention. Uses VLE engagement data (logins, resource views) to understand learner participation patterns.</div>
+            <div class="tla-skill-links"><a href="https://www.gov.uk/guidance/using-data-effectively-in-further-education" target="_blank">Gov.UK — Data in FE ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">2.6</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Ethical AI awareness in TLA</div>
+            <div class="tla-skill-area">AI Literacy</div>
+            <div class="tla-skill-desc">Understands how learners are using AI tools (ChatGPT, Copilot) in their work. Has a position on AI in assessment — knows the college's AI policy. Can identify likely AI-generated content and respond constructively rather than punitively. Begins using AI to reduce their own workload (e.g. generating quiz questions, lesson plan drafts).</div>
+            <div class="tla-skill-links"><a href="https://www.jisc.ac.uk/ai-in-tertiary-education" target="_blank">Jisc — AI in Tertiary Education ↗</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STAGE 2B: ADOPTING — EMBEDDING -->
+    <div class="tla-stage adopting-b">
+      <div class="tla-stage-header">
+        <div class="tla-stage-num">Stage 2B</div>
+        <div class="tla-stage-info">
+          <h3>Adopting — Embedding &amp; Expanding</h3>
+          <span class="tla-digcomp">DigCompEdu B2 (Expert) · ETF DTPF Stage 2 (upper)</span>
+        </div>
+        <div class="tla-stage-who">Confident practitioners · Those seeking ATS or Digital Champion status · Staff mentoring newer colleagues</div>
+      </div>
+      <div class="tla-skills-grid">
+        <div class="tla-skill">
+          <div class="tla-skill-number">2B.1</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Technology-enhanced active learning design</div>
+            <div class="tla-skill-area">Pedagogical Innovation</div>
+            <div class="tla-skill-desc">Designs lesson sequences where digital tools purposefully change the learning experience — not just presenting content, but enabling collaboration, problem-solving, or creative production. Applies frameworks like 21CLD (21st Century Learning Design) or UDL to technology choices.</div>
+            <div class="tla-skill-links"><a href="https://www.microsoft.com/en-us/education/products/teams/21cld" target="_blank">Microsoft 21CLD ↗</a> · <a href="https://udlguidelines.cast.org/" target="_blank">UDL Guidelines ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">2B.2</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Digital differentiation</div>
+            <div class="tla-skill-area">Learner Support</div>
+            <div class="tla-skill-desc">Uses digital tools to personalise learning at scale — adaptive quiz tools that route learners to different content based on responses, choice boards created digitally, differentiated resources shared via the VLE for different ability groups without additional printing.</div>
+            <div class="tla-skill-links"><a href="https://joint-research-centre.ec.europa.eu/digcompedu_en" target="_blank">DigCompEdu Area 4: Learner Support ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">2B.3</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Producing and editing digital media for teaching</div>
+            <div class="tla-skill-area">Digital Content Creation</div>
+            <div class="tla-skill-desc">Produces screencasts (Loom, OBS, or Teams recording), short instructional videos, or narrated PowerPoints for flipped learning or learner reference. Captions all video content. Embeds media in the VLE rather than sending links via email.</div>
+            <div class="tla-skill-links"><a href="https://www.loom.com/education" target="_blank">Loom for Education ↗</a> · <a href="https://support.microsoft.com/en-us/topic/add-captions-to-your-videos-in-microsoft-stream" target="_blank">Captions in Microsoft Stream ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">2B.4</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Advanced digital assessment and feedback</div>
+            <div class="tla-skill-area">Assessment</div>
+            <div class="tla-skill-desc">Uses Turnitin originality reports and rubrics. Provides audio or video feedback on learner work. Uses digital annotation tools (e.g. DocHub, Adobe) on submitted PDFs. Designs digital summative assessments that are both valid and cheat-resistant in an AI context.</div>
+            <div class="tla-skill-links"><a href="https://www.turnitin.com/solutions/feedback-studio" target="_blank">Turnitin Feedback Studio ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">2B.5</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">AI as a teaching productivity tool</div>
+            <div class="tla-skill-area">AI in TLA</div>
+            <div class="tla-skill-desc">Uses AI tools (Microsoft Copilot, ChatGPT, MagicSchool.ai, Eduaide.ai) to draft lesson plans, generate differentiated resources, produce quiz banks, and summarise learner feedback. Critically evaluates AI outputs before using them. Transparent with learners about AI use in resource creation.</div>
+            <div class="tla-skill-links"><a href="https://www.magicschool.ai/" target="_blank">MagicSchool AI for Educators ↗</a> · <a href="https://www.jisc.ac.uk/ai-in-tertiary-education" target="_blank">Jisc AI Guidance ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">2B.6</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Building learners' digital skills in subject context</div>
+            <div class="tla-skill-area">Learner Digital Empowerment</div>
+            <div class="tla-skill-desc">Deliberately plans for learners to develop digital skills within the subject — not as a bolt-on, but embedded in vocational tasks. Can articulate which EDS framework categories their learners are developing and how this is evidenced in their VLE or ePortfolio.</div>
+            <div class="tla-skill-links"><a href="https://www.gov.uk/government/publications/essential-digital-skills-framework" target="_blank">DfE EDS Framework ↗</a> · <a href="https://www.et-foundation.co.uk/professional-development/edtech-support/digital-skills-competency-framework/" target="_blank">ETF DTPF ↗</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- STAGE 3: LEADING -->
+    <div class="tla-stage leading">
+      <div class="tla-stage-header">
+        <div class="tla-stage-num">Stage 3</div>
+        <div class="tla-stage-info">
+          <h3>Leading Digital Teaching Practice</h3>
+          <span class="tla-digcomp">DigCompEdu C1–C2 (Leader → Pioneer) · ETF DTPF Stage 3</span>
+        </div>
+        <div class="tla-stage-who">Digital Champions · TLAMs with digital remit · Heads of Area with strong digital culture · Those pursuing Advanced Teacher Status (ATS)</div>
+      </div>
+      <div class="tla-skills-grid">
+        <div class="tla-skill">
+          <div class="tla-skill-number">3.1</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Mentoring and coaching digital practice</div>
+            <div class="tla-skill-area">Professional Leadership</div>
+            <div class="tla-skill-desc">Supports and coaches colleagues on digital tools and pedagogy — not just demonstrating but modelling reflective practice. Identifies where a colleague is on the DTPF progression and uses this to tailor coaching. Runs team CPD sessions on specific digital tools with pedagogical rationale, not just "how to" instruction.</div>
+            <div class="tla-skill-links"><a href="https://www.et-foundation.co.uk/professional-development/edtech-support/digital-skills-competency-framework/" target="_blank">ETF DTPF Stage 3 ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">3.2</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Designing digital-first curriculum</div>
+            <div class="tla-skill-area">Curriculum Design</div>
+            <div class="tla-skill-desc">Designs entire units or programmes where digital tools are integral to the learning journey, not supplementary. The VLE is a live, learner-directed environment. Assessment strategy incorporates digital evidence. Learners build digital skills explicitly mapped to the EDS Framework and future employment needs.</div>
+            <div class="tla-skill-links"><a href="https://joint-research-centre.ec.europa.eu/digcompedu_en" target="_blank">DigCompEdu Area 3: Teaching &amp; Learning ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">3.3</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Critical evaluation and adoption of EdTech</div>
+            <div class="tla-skill-area">Strategic Digital Leadership</div>
+            <div class="tla-skill-desc">Evaluates new educational technology critically — pedagogical rationale, accessibility compliance, data privacy (GDPR), cost, and sustainability. Makes evidence-based recommendations to curriculum leaders or senior management on EdTech adoption or discontinuation. Does not adopt tools because they are fashionable.</div>
+            <div class="tla-skill-links"><a href="https://www.jisc.ac.uk/guides/evaluating-edtech" target="_blank">Jisc — Evaluating EdTech ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">3.4</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">AI pedagogy leadership</div>
+            <div class="tla-skill-area">AI in Education</div>
+            <div class="tla-skill-desc">Leads the team's thinking on AI in teaching and assessment — drafts or contributes to the area's AI policy, models ethical AI use in their own practice, supports colleagues in navigating the AI landscape. Stays current with emerging AI tools and their FE implications through professional reading and networks.</div>
+            <div class="tla-skill-links"><a href="https://www.jisc.ac.uk/ai-in-tertiary-education" target="_blank">Jisc AI Framework ↗</a> · <a href="https://futuredotnow.uk/new-report-charts-path-to-ai-ready-uk-workforce/" target="_blank">FutureDotNow AI-Ready Report ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">3.5</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Digital research and innovation in practice</div>
+            <div class="tla-skill-area">Scholarship &amp; Innovation</div>
+            <div class="tla-skill-desc">Conducts or participates in action research into digital pedagogy. Writes up or presents findings — in team meetings, at sector CPD events, or via publication (blogs, practitioner journals). Contributes to the evidence base on what works in digital teaching in FE &amp; HE.</div>
+            <div class="tla-skill-links"><a href="https://www.et-foundation.co.uk/research/" target="_blank">ETF Research &amp; Publications ↗</a> · <a href="https://www.tandfonline.com/journals/rjie20" target="_blank">JITE — Journal of Innovative Teaching &amp; Education ↗</a></div>
+          </div>
+        </div>
+        <div class="tla-skill">
+          <div class="tla-skill-number">3.6</div>
+          <div class="tla-skill-body">
+            <div class="tla-skill-name">Systemic digital inclusion advocacy</div>
+            <div class="tla-skill-area">Inclusion &amp; Accessibility</div>
+            <div class="tla-skill-desc">Ensures digital accessibility is embedded at curriculum and resource level across the team — not just their own practice. Audits the team's VLE provision for WCAG compliance. Champions assistive technology use for SEND learners. Makes the case to leadership for resources, devices, and infrastructure that reduce digital exclusion.</div>
+            <div class="tla-skill-links"><a href="https://www.w3.org/WAI/WCAG22/quickref/" target="_blank">WCAG 2.2 ↗</a> · <a href="https://www.gov.uk/guidance/accessibility-requirements-for-public-sector-websites-and-apps" target="_blank">Gov.UK Accessibility Requirements ↗</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sources-block">
+      <h4>Key Sources &amp; Where to Find Them</h4>
+      <div class="sources-list">
+        <div class="source-item">
+          <a href="https://www.et-foundation.co.uk/professional-development/edtech-support/digital-skills-competency-framework/" target="_blank">ETF — Digital Teaching Professional Framework (DTPF)</a>
+          <span>The definitive FE teacher digital framework. Navigate to: et-foundation.co.uk → Professional Development → EdTech Support → Digital Skills Competency Framework. Updated 2023.</span>
+        </div>
+        <div class="source-item">
+          <a href="https://joint-research-centre.ec.europa.eu/digcompedu_en" target="_blank">DigCompEdu — European Framework for Educator Digital Competence</a>
+          <span>European Commission JRC. Navigate to: joint-research-centre.ec.europa.eu → search "DigCompEdu". Framework covers 22 competences across 6 areas with A1–C2 levels. Includes SELFIEforTEACHERS self-assessment tool.</span>
+        </div>
+        <div class="source-item">
+          <a href="https://enhance.etfoundation.co.uk/" target="_blank">ETF Enhance Digital Teaching Platform</a>
+          <span>Free CPD platform for FE teachers. Navigate to: enhance.etfoundation.co.uk. Includes self-assessment mapped to DTPF and curated CPD modules. Requires ETF registration.</span>
+        </div>
+        <div class="source-item">
+          <a href="https://www.jisc.ac.uk/guides/digital-capabilities" target="_blank">Jisc — Building Digital Capabilities Framework</a>
+          <span>Navigate to: jisc.ac.uk → Guides → Digital Capabilities. Includes 6-element framework and Discovery Tool for self-assessment for both staff and learners in FE &amp; HE.</span>
+        </div>
+        <div class="source-item">
+          <a href="https://www.jisc.ac.uk/ai-in-tertiary-education" target="_blank">Jisc — Artificial Intelligence in Tertiary Education</a>
+          <span>Navigate to: jisc.ac.uk → search "AI in tertiary education". Includes guidance on AI in teaching, assessment integrity, and policy development for FE &amp; HE.</span>
+        </div>
+        <div class="source-item">
+          <a href="https://www.et-foundation.co.uk/professional-standards/" target="_blank">ETF Professional Standards for Teachers &amp; Leaders in FE</a>
+          <span>Navigate to: et-foundation.co.uk → Professional Standards. Digital capability is embedded across the standards — especially in 'Reflect and improve' and 'Maintain and update knowledge'.</span>
+        </div>
+        <div class="source-item">
+          <a href="https://set.et-foundation.co.uk/professional-recognition/qtls/" target="_blank">ETF — QTLS &amp; Advanced Teacher Status (ATS)</a>
+          <span>Navigate to: set.et-foundation.co.uk → Professional Recognition → QTLS / ATS. Digital pedagogy is assessed as part of the professional practice portfolio.</span>
+        </div>
+        <div class="source-item">
+          <a href="https://www.microsoft.com/en-us/education/products/teams/21cld" target="_blank">Microsoft — 21st Century Learning Design (21CLD)</a>
+          <span>Navigate to: microsoft.com → Education → Teams → 21CLD. Rubric-based framework for evaluating technology-enhanced learning design. Used in Weston College TLA strategy.</span>
+        </div>
+      </div>
+    </div>
+  </div><!-- end tab7 -->
 
 </div><!-- end tabs-section -->
 

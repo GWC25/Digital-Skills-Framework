@@ -1,0 +1,174 @@
+{
+  "metadata": {
+    "title": "Digital Skills Framework — Weston College",
+    "version": "2.1",
+    "lastUpdated": "2026-04-27",
+    "author": "Graeme Wright, Digital Pedagogy Coach",
+    "description": "Editable master data file for all 30+ curriculum areas. Edit this file to update Tab 2 and Tab 3 in the framework."
+  },
+  "areas": [
+    {
+      "code": "AGF",
+      "name": "Arts, Graphics & Fashion",
+      "category": "Arts, Creative & Media",
+      "categoryIcon": "🎨",
+      "coreDigitalSkills": "Digital research, Content creation, Portfolio development, Social media presence",
+      "subjectSpecificTools": "Adobe Creative Suite (Photoshop, Illustrator, InDesign), Canva Pro, CLO 3D / Browzwear (fashion CAD), AI image generation (Adobe Firefly), Behance / Portfolio platforms",
+      "feHeContext": "L1–L3 FE; HND/BA at UCW. Digital portfolio is core evidence. HE progression to BA Graphic Design, Fashion Design. Industry requires Adobe CC proficiency as baseline.",
+      "industrySpecificSkills": [
+        {
+          "title": "Adobe Creative Suite",
+          "description": "Photoshop, Illustrator, InDesign, Premiere, After Effects — the industry-standard creative toolkit."
+        },
+        {
+          "title": "AI-Assisted Creative Tools",
+          "description": "Midjourney, Adobe Firefly, Suno — ethical use in creative production with critical evaluation of IP."
+        },
+        {
+          "title": "Digital Rights & IP Management",
+          "description": "Copyright, Creative Commons, licensing digital work, protecting original creative output online."
+        }
+      ],
+      "lastEdited": "2026-04-27",
+      "notes": ""
+    },
+    {
+      "code": "GMA",
+      "name": "Games, Media & Animation",
+      "category": "Arts, Creative & Media",
+      "categoryIcon": "🎨",
+      "coreDigitalSkills": "Complex software navigation, Digital project management, Client brief interpretation, Version control (Git)",
+      "subjectSpecificTools": "Unity / Unreal Engine, Autodesk Maya / Blender, Adobe Premiere / After Effects, Toon Boom Harmony, Perforce / Git source control, AI asset generation tools",
+      "feHeContext": "L2–L3 FE (BTEC/T Level Creative Media). HND/BA Game Design, Animation. UK games industry employs ~50,000; Unreal and Unity proficiency essential. VFX market projected £135bn by 2035.",
+      "industrySpecificSkills": [
+        {
+          "title": "Game Engines (Unity / Unreal)",
+          "description": "Real-time rendering, asset optimisation, interactive media production — essential for GMA learners."
+        },
+        {
+          "title": "Digital Production Pipelines",
+          "description": "Version control (Git/Perforce), cloud collaboration tools, sprint-based production workflows."
+        }
+      ],
+      "lastEdited": "2026-04-27",
+      "notes": ""
+    },
+    {
+      "code": "BUI",
+      "name": "Building Services (Construction)",
+      "category": "Construction, Engineering & Motor Vehicle",
+      "categoryIcon": "🔨",
+      "coreDigitalSkills": "Data handling, Digital invoicing, Professional communication, QR / clock-in systems",
+      "subjectSpecificTools": "AutoCAD / Revit (BIM), Fieldwire / Procore (site management), Digital laser levels & measuring, Sage / Xero invoicing, BREEAM sustainability tools, QR clock-in systems",
+      "feHeContext": "L1–L3 FE; T Level in Construction. HNC/HND Built Environment. BIM Level 2 is now a government procurement requirement — digital drawing literacy is not optional at technician level and above.",
+      "industrySpecificSkills": [
+        {
+          "title": "BIM & CAD Software",
+          "description": "Revit, AutoCAD — reading, producing and annotating digital drawings. BIM Level 2 is now a UK government procurement requirement."
+        },
+        {
+          "title": "Digital Site Management",
+          "description": "QR clock-in, digital site diaries, H&S reporting apps (Fieldwire, Procore, Site App Pro)."
+        },
+        {
+          "title": "Sustainability & Carbon Calculation Tools",
+          "description": "BREEAM digital tools, energy modelling, materials calculators for net-zero construction."
+        }
+      ],
+      "lastEdited": "2026-04-27",
+      "notes": ""
+    },
+    {
+      "code": "EMV",
+      "name": "Engineering & Motor Vehicle",
+      "category": "Construction, Engineering & Motor Vehicle",
+      "categoryIcon": "🔨",
+      "coreDigitalSkills": "Technical documentation, Diagnostic data interpretation, Parts ordering portals, Customer communication",
+      "subjectSpecificTools": "VW / Bosch / ALLDATA diagnostic software, OBD II digital diagnostics, TecDoc / Haynes Pro parts lookup, EV battery management systems, ADAS calibration tools",
+      "feHeContext": "L1–L3 FE; IMI apprenticeships. Modern vehicle technicians work entirely with digital diagnostic systems. EV transition means battery management and ADAS digital skills are now critical.",
+      "industrySpecificSkills": [
+        {
+          "title": "Vehicle Diagnostic Systems",
+          "description": "OBD II scanners, manufacturer-specific diagnostic software (Bosch, ALLDATA), EV battery management."
+        },
+        {
+          "title": "ADAS Calibration Tools",
+          "description": "Advanced Driver Assistance Systems calibration — critical skill for modern vehicle technicians."
+        }
+      ],
+      "lastEdited": "2026-04-27",
+      "notes": ""
+    },
+    {
+      "code": "BUS",
+      "name": "Business & Tourism",
+      "category": "Business, Professional & Digital",
+      "categoryIcon": "📊",
+      "coreDigitalSkills": "Spreadsheets & data analysis, Professional email communication, Digital marketing basics, Research & report writing",
+      "subjectSpecificTools": "Xero / QuickBooks accounting, CRM systems (Salesforce / HubSpot), Power BI / Excel advanced, Google Analytics / SEO tools, Booking management systems, AI drafting & summarising tools",
+      "feHeContext": "L2–L3 / A Level / T Level Business. BA Business at UCW. WEF Future of Jobs 2025 identifies data analysis, AI literacy and digital marketing as the fastest-growing business competencies.",
+      "industrySpecificSkills": [
+        {
+          "title": "Accounting & Finance Platforms",
+          "description": "Xero, QuickBooks, Sage — bookkeeping, VAT returns, payroll; HMRC Making Tax Digital compliance."
+        },
+        {
+          "title": "CRM & Marketing Automation",
+          "description": "Salesforce, HubSpot, Mailchimp — customer management, pipeline tracking, automated campaigns."
+        }
+      ],
+      "lastEdited": "2026-04-27",
+      "notes": ""
+    },
+    {
+      "code": "HAC",
+      "name": "Health (inc. T Level)",
+      "category": "Health, Care & Education",
+      "categoryIcon": "🏥",
+      "coreDigitalSkills": "Digital record-keeping, Data handling (patient records), GDPR / Caldicott compliance, Telehealth platforms",
+      "subjectSpecificTools": "SystmOne / EMIS (patient records), NHS Digital portals & e-referrals, e-Prescribing & MAR chart software, Wearable health monitoring devices, Telehealth / video consultation platforms, Digital diagnostic imaging tools",
+      "feHeContext": "L2–L3 / T Level Health & Science. FdSc / BSc at UCW. NHS Digital strategy mandates digital record-keeping across all care settings. Healthcare AI tools are entering clinical practice.",
+      "industrySpecificSkills": [
+        {
+          "title": "Electronic Patient / Care Record Systems",
+          "description": "SystmOne, EMIS, Liquid Logic — navigating digital care records securely and accurately."
+        },
+        {
+          "title": "Telehealth & Remote Care",
+          "description": "Video consultation platforms, wearable health tech interpretation, remote monitoring tools."
+        },
+        {
+          "title": "GDPR & Data Security in Care Contexts",
+          "description": "Caldicott principles, NHS data handling compliance, safe digital record management."
+        }
+      ],
+      "lastEdited": "2026-04-27",
+      "notes": ""
+    },
+    {
+      "code": "SPO",
+      "name": "Sport",
+      "category": "Sport, Health & Active Living",
+      "categoryIcon": "🏃",
+      "coreDigitalSkills": "Data handling, Digital communications, Social media for coaching, Research & performance analysis",
+      "subjectSpecificTools": "Wearable tech (Garmin, Polar, Catapult), Video analysis (Hudl, Dartfish), Client management platforms, Online coaching platforms (Trainerize), Exercise prescription apps, Sports booking systems (Playwaze)",
+      "feHeContext": "L2–L3 FE; A Level PE; FdSc/BSc Sport at UCW. Performance analysis software (Hudl) is used by most professional and semi-professional clubs — learners entering coaching need data literacy.",
+      "industrySpecificSkills": [
+        {
+          "title": "Performance Analysis Software",
+          "description": "Hudl, Dartfish, Catapult — video tagging, GPS data analysis, match analysis reporting."
+        },
+        {
+          "title": "Wearable Tech Data Interpretation",
+          "description": "Heart rate, GPS, load monitoring from Garmin, Polar, Catapult — interpreting data for training prescription."
+        },
+        {
+          "title": "Online Coaching & Client Platforms",
+          "description": "Trainerize, PT Distinction, My PT Hub — digital client management and remote coaching delivery."
+        }
+      ],
+      "lastEdited": "2026-04-27",
+      "notes": ""
+    }
+  ]
+}
